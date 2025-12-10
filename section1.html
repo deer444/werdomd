@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>товары</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">обитель раздора</a>
+    
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">домой</a></li>
+                        <li class="nav-item"><a class="nav-link" href="section1.html">раз</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">каталожка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">базар</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">купить что-нибудь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>полезная информация</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+            border-bottom: 2px solid #444;
+        }
+
+        nav a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+            padding: 6px 10px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #444;
+            border-radius: 6px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #333;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .image-block {
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: center;
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .image-block img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .caption {
+            display: none;
+            padding-top: 10px;
+            color: #ccc;
+        }
+
+        .caption.visible {
+            display: block;
+        }
+
+        #top {
+            font-size: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container" style="margin-top: 120px;">
+
+<header>
+    <nav>
+        <a href="#section1">камни</a>
+        <a href="#section2">олен</a>
+        <a href="#top">к началу страницы</a>
+    </nav>
+</header>
+
+<section id="section1">
+    <h2>камни</h2>
+    <p>
+        любить камни — значит ощущать тихую силу и вечную мудрость природы. миру нужны камни, потому что они — хранители времени, истории и энергии земли. каждый камень уникален, словно маленький кусочек планеты, который помогает нам ощутить связь с глубинами природы и устойчивость в стремительном мире.
+    </p>
+
+    <p>
+        камни учат нас терпению и стойкости: они были здесь задолго до нас и останутся после. с ними мы чувствуем опору и силу, способность выдерживать трудности и идти вперёд. камни помогают сосредоточиться, снять стресс и обрести внутренний баланс. их натуральная красота вдохновляет на творчество и уважение к миру вокруг.
+    </p>
+
+    <div class="image-block" onclick="toggleCaption(this)">
+        <img src="images/rock.jpg" alt="Image 1">
+        <div class="caption">типичный представитель вида</div>
+    </div>
+
+    <p>
+        когда мы берём камень в руки, мы прикасаемся к чему-то древнему и настоящему, что напоминает — всё в жизни имеет свою основу и цель. именно поэтому миру нужны камни: чтобы сохранять связь с природой, получать силу и напоминать о важности терпения и устойчивости в любом времени.
+    </p>
+</section>
+
+<section id="section2">
+    <h2>олени</h2>
+
+    <p>
+        любить оленей — это значит чувствовать тепло и волшебство природы прямо в сердце. мягкие игрушки в виде оленей — это не просто игрушки, это маленькие хранители уюта и доброты, которые приносят в нашу жизнь частичку той сказки, что заключена в величии и красоте этих удивительных животных.
+    </p>
+
+    <p>
+        олени символизируют спокойствие, силу и нежность одновременно. когда в доме появляется мягкий олень, он словно наполняет пространство атмосферой гармонии и радости. это идеальный друг для детей и взрослых, который помогает справиться с тревогами и приносит ощущение защищённости. кроме того, благодаря своей мягкости и теплоте, такие игрушки учат заботе и любви — важным чувствам для нашего мира. 
+        
+    </p>
+
+    <div class="image-block" onclick="toggleCaption(this)">
+        <img src="images/deer.jpg" alt="Image 2">
+        <div class="caption">оленей много не бывает</div>
+    </div>
+
+    <p>
+        в мире, где так много суеты и стресса, мягкий олень напоминает нам о ценности простых радостей, спокойствия и природной красоты. он становится неотъемлемой частью тех мгновений, когда хочется остановиться, вдохнуть и почувствовать связь с чем-то добрым и настоящим. поэтому миру очень нужны именно такие олени — мягкие, уютные, наполненные любовью.
+    </p>
+</section>
+
+<script>
+function toggleCaption(block) {
+    const cap = block.querySelector(".caption");
+    cap.classList.toggle("visible");
+}
+</script>
+
+</body>
+</html>
+
